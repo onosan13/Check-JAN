@@ -56,9 +56,14 @@ function pinhu($tehai)
   global $joukens;
   $anko_count = array_count_values($tehai);
 
+  $check=0;
+
   foreach ($anko_count as $anko) {
     if ($anko == 3) {
-      return;
+      $check++;
+      if($check==2){
+        return;
+      }
     }
   }
 
