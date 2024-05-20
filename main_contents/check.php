@@ -101,8 +101,6 @@ $check=0;
       <div class="header-right">
         <ul class="header-nav">
           <li><a href="../index.html">トップ /</a></li>
-          <li>役一覧 /</li>
-          <li>点数早見表 /</li>
         </ul>
       </div>
     </div>
@@ -242,9 +240,7 @@ $check=0;
         <p>～麻雀点数計算サイト～</p>
       </div>
       <ul class="footer-nav">
-        <li><a href="../index.html">トップ /</a></li>
-        <li>役一覧 /</li>
-        <li>点数早見表 /</li>
+        <li><a href="../index.html">トップ</a></li>
       </ul>
     </div>
   </footer>
