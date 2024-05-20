@@ -152,6 +152,7 @@ else{
   <title>Check JAN</title>
   <meta name="description" content="麻雀の点数計算を行うサイトです。">
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../img/favicon.ico">
 </head>
 
 <body>
