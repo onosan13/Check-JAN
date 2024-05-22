@@ -64,7 +64,7 @@ $haku = haku($tehais);
 $hatu = hatu($tehais);
 $chun = chun($tehais);
 
-$yaku_check=[
+$yaku_check = [
   $ton,
   $nan,
   $sha,
@@ -91,10 +91,10 @@ $yaku_check=[
 ];
 
 
-$total_han =0;
+$total_han = 0;
 $yakuman_list = [];
 $jouken_list = [];
-$yaku_list=[];
+$yaku_list = [];
 
 $yakuman_check = [
   $kokusi,
@@ -117,28 +117,23 @@ jouken_list();
 yaku_check();
 yaku_list();
 
-$result_score=result_score($total_han);
-$result_list=array_merge($yakuman_list,$jouken_list,$yaku_list);
+$result_score = result_score($total_han);
+$result_list = array_merge($yakuman_list, $jouken_list, $yaku_list);
 
-$yaku_message=0;
+$yaku_message = 0;
 
-if($total_han>=13){
-  $yaku_message="役満";
-}
-elseif($total_han>=11){
-  $yaku_message="三倍満";
-}
-elseif($total_han>=8){
-  $yaku_message="倍満";
-}
-elseif($total_han>=6){
-  $yaku_message="跳満";
-}
-elseif($total_han>=4){
-  $yaku_message="満貫";
-}
-else{
-  $yaku_message=null;
+if ($total_han >= 13) {
+  $yaku_message = "役満";
+} elseif ($total_han >= 11) {
+  $yaku_message = "三倍満";
+} elseif ($total_han >= 8) {
+  $yaku_message = "倍満";
+} elseif ($total_han >= 6) {
+  $yaku_message = "跳満";
+} elseif ($total_han >= 4) {
+  $yaku_message = "満貫";
+} else {
+  $yaku_message = null;
 }
 
 ?>
@@ -170,7 +165,7 @@ else{
       </div>
       <div class="header-right">
         <ul class="header-nav">
-          <li><a href="../index.html">トップ /</a></li>
+          <li><a href="../index.html">トップ</a></li>
         </ul>
       </div>
     </div>
@@ -190,7 +185,7 @@ else{
 
     <h1>上がり役はこちら</h1>
     <div class="result-tehai-container">
-      <?php foreach($result_list as $list): ?>
+      <?php foreach ($result_list as $list) : ?>
         <h5><?php echo $list; ?></h5>
       <?php endforeach; ?>
     </div>
